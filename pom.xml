@@ -19,6 +19,20 @@
         <thucydides.version>0.9.268</thucydides.version>
         <jelastic.context>addressbook</jelastic.context>
     </properties>
+	
+	<distributionManagement>
+<repository>
+<id>releases</id>
+<name>Internal Releases</name>
+<url>http://172.31.0.201:8081/nexus/content/repositories/releases</url>
+</repository>
+<snapshotRepository>
+<id>snapshots</id>
+<name>Internal Snapshots</name>
+<url>http://172.31.0.201:8081/nexus/content/repositories/snapshots</url>
+</snapshotRepository>
+</distributionManagement>
+
 
     <scm>
         <connection>scm:git:git@github.com:${github.account}/addressbook.git</connection>
